@@ -9,12 +9,22 @@
 </head>
 
 <?php
-define('DSN', 'mysql:host=localhost;dbname=hotel_BD;charset=utf8');
-define('USER', 'root');
-define('PASS', '');
 
-$pdo = new \PDO(DSN, USER, PASS);
+function connexionBDD() {
+    define('DSN', 'mysql:host=localhost;dbname=hotel_BD;charset=utf8');
+    define('USER', 'root');
+    define('PASS', '');
 
+    try {
+        $pdo = new \PDO(DSN, USER, PASS);
+        $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+        return $pdo;
+    } catch(\PDOException $e) {
+        // Gérer les erreurs de connexion à la base de données
+        echo "Erreur de connexion à la base de données: " . $e->getMessage();
+        exit();
+    }
+}
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
