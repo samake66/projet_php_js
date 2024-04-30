@@ -39,10 +39,10 @@ if(isset($val_search) && !empty(trim($val_recherche))){
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
         <li class="nav-item">
-          <a class="nav-link active" href="index.php?page=hotel"><i class="fa-solid fa-layer-group"></i> Hotel</a>
+          <a class="nav-link active" href="list_hotel.php?page=hotel"><i class="fa-solid fa-layer-group"></i> Hotel</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php?page=chambre"><i class="fa-light fa-book"></i> Chambre</a>
+          <a class="nav-link active" aria-current="page" href="list_chambre.php?page=chambre"><i class="fa-light fa-book"></i> Chambre</a>
         </li>
        
  
