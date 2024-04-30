@@ -18,3 +18,10 @@ Descriptions des différents fichiers et dossiers /
 11- mes_reservation: affichage des réservations d'un client
 
 ...............
+Moussa:  accueil chambre list_chambre details_chambre 
+
+Ovi: form_inscription inscription (envoi vers la page de connexion) 
+
+Sidya form_connexion connexion (envoi vers la page d'accueil) avec des $_SESSION
+
+Antony: mes_reservation list_hotel 
